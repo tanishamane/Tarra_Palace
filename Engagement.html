@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Hall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> <!-- New Font -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            color: #a12828;
+            font-family: 'Dancing Script', cursive; /* New Font Applied */
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .text {
+            width: 50%;
+        }
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .arrangements {
+            margin-top: 15px;
+        }
+        .arrangements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .arrangements ul li {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .arrangements ul li::before {
+            content: "• ";
+            color: #a12828;
+            font-weight: bold;
+        }
+        .required {
+            color: #a12828;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .content img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title">Engagement Hall</h2>
+    <div class="content">
+        <img src="https://image.wedmegood.com/resized/450X/uploads/project/49911/1555921204_vivekkrishnanphotography_438.jpg" alt="Engagement">
+        <div class="text">
+            <p>
+                Make your Engagement memorable with us. Plan your Royal Engagement at Tarra palace, Kognoli. 
+                It is one of the Best Engagement Venues in Koganoli. We make your Engagement Memorable by 
+                providing the best facilities & services. It is a Royal Engagement Hall in Kognoli.
+            </p>
+            <div class="arrangements">
+                <h3><b>ARRANGEMENTS</b></h3>
+                <ul>
+                    <li>Theme decor & Floral arrangements <span class="required"></span></li>
+                    <li>Priest arrangement for all rituals</li>
+                    <li>Audio-visual</li>
+                    <li>Photography & Video <span class="required"></span></li>
+                    <li>Catering <span class="required"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

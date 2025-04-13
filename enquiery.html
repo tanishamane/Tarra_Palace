@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Section Styling */
+section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Contact Me Header */
+.Myser h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mybtn {
+    background-color: #8c1d34;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.mybtn:hover {
+    background-color: #6d1628;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Address Section */
+.add {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.add h3 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.add hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Enquiry Form */
+.enquiry {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.floating {
+    margin-bottom: 15px;
+}
+
+.floating label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.floating input,
+.floating textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.floating textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Submit Button */
+.sub {
+    background-color: #8c1d34;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.sub:hover {
+    background-color: #6d1628;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .add,
+    .enquiry {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="Myser" id="contact">
+            <h1>Contact Me</h1>
+            <button type="button" class="mybtn">Just Leave an Enquiry!</button>
+        </div>
+    
+        <div class="contact">
+            <div class="add">
+                <p>Address</p>
+                <h3>Tarra palace Hall
+                    Nh4 highway,
+                    near to kagal, and kognoli
+                    Toll plaza,
+                    kognoli 591229.
+                    <br>
+                    Tel :8867640864 </h3>
+                <hr>
+                <p>Email</p>
+                <h3>tanishamane903@gmail.com</h3>
+                <hr>
+                <p>Office Timings:</p>
+                <h3>(Mon – Sat) : 10.00 am – 7.00 pm <br>
+                    
+                    (Sun) : 12 noon – 3.00 pm</h3>
+                <hr>
+            </div>
+    
+            <div class="enquiry">
+                <form id="contact-form">
+                    <div class="floating">
+                        <label>Your Name</label>
+                        <input type="text" name="user_name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="floating">
+                        <label>Your Email</label>
+                        <input type="email" name="user_email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="floating">
+                        <label>Subject</label>
+                        <input type="text" name="subject" placeholder="Enter subject" required>
+                    </div>
+                    <div class="floating">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="sub">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("bX-R5lIe7W2GNSAiV"); // Your EmailJS User ID
+        })();
+    
+        // Form Submission Handler
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            // Send form using EmailJS
+            emailjs.sendForm('service_mg6yocx', 'template_8r8lgjn', this)
+                .then(function(response) {
+                    alert('Message Sent Successfully!');
+                    console.log('Success:', response.status, response.text);
+                }, function(error) {
+                    alert('Failed to Send Message. Please Try Again.');
+                    console.error('Error:', error);
+                });
+    
+            // Reset the form after submission
+            this.reset();
+        });
+    </script>
+</body>
+</html>

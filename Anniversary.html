@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Hall</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            color: #a12828;
+            font-family: 'Great Vibes', cursive;
+            margin-bottom: 20px; /* Removed the line */
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .text {
+            width: 50%;
+        }
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .arrangements {
+            margin-top: 15px;
+        }
+        .arrangements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .arrangements ul li {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .arrangements ul li::before {
+            content: "• ";
+            color: #a12828;
+            font-weight: bold;
+        }
+        .required {
+            color: #a12828;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text {
+                width: 100%;
+                margin-top: 20px;
+            }
+            .content img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="title">Anniversary Hall</h2>
+    <div class="content">
+        <img src="https://www.bakingo.com/blog/wp-content/uploads/2023/01/recreate-the-wedding.jpg" alt="Anniversary">
+        <div class="text">
+            <p>
+                Plan a Surprise Anniversary Party for your soulmate. Also, you can plan your 
+                Parents' Wedding Anniversary at Tarra palace, Koganoli. A perfect place for 
+                your Anniversary Celebration. Give us one chance to make your Anniversary 
+                Memorable.
+            </p>
+            <div class="arrangements">
+                <h3><b>ARRANGEMENTS</b></h3>
+                <ul>
+                    <li>Theme decor</li>
+                    <li>Floral arrangements</li>
+                    <li>Audio-visual equipment</li>
+                    <li>Entertainment artists</li>
+                    <li>Catering</li>
+                    <li>Photography & Video</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

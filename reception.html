@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reception Hall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> <!-- Updated Font -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #a52a2a;
+            font-family: 'Dancing Script', cursive; /* Applied Font */
+            margin-top: 30px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-section {
+            padding-left: 30px;
+            flex: 1;
+        }
+
+        .arrangements h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .arrangements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .arrangements li {
+            font-size: 16px;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .arrangements li::before {
+            content: "•";
+            color: #a52a2a;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 18px;
+        }
+
+        .required {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .text-section {
+                padding-left: 0;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                font-size: 30px;
+            }
+
+            .container {
+                margin: 30px auto;
+                padding: 15px;
+            }
+
+            .arrangements li {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 26px;
+            }
+
+            .container {
+                margin: 20px auto;
+                padding: 10px;
+            }
+
+            .arrangements li {
+                font-size: 13px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">Reception Hall</div>
+
+    <div class="container">
+        <div class="image-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEi3yjBUfQAvwMB0Rcuil0u1K4GLZGhQY_Q&s" alt="Reception">
+        </div>
+        <div class="text-section">
+            <p>
+                Make your Reception memorable with us. Tarra palace is a perfect Reception Hall in Kognoli. 
+                We make your Reception memorable by providing the best services. Tarra Palace is one of the 
+                spacious & well-managed Banquet Halls in Kognoli.
+            </p>
+
+            <div class="arrangements">
+                <h3>ARRANGEMENTS</h3>
+                <ul>
+                    <li>Theme decor & Floral arrangements <span class="required"></span></li>
+                    <li>Priest arrangement for all rituals</li>
+                    <li>Audio-visual, Photography & Video <span class="required"></span></li>
+                    <li>Catering <span class="required"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
