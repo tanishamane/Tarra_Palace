@@ -1,32 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marriage / Wedding Hall</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 20px;
             background-color: #fff;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .container img {
-            width: 50%;
-            border-radius: 10px;
-        }
-
-        .text {
-            width: 50%;
         }
 
         h1 {
@@ -37,8 +20,41 @@
             font-weight: bold;
         }
 
-        .arrangements {
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container img,
+        .text {
+            flex: 1 1 100%;
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text {
+            width: 100%;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h2 {
             margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .arrangements {
+            margin-top: 10px;
         }
 
         .arrangements ul {
@@ -56,6 +72,24 @@
             font-weight: bold;
         }
 
+        @media (min-width: 768px) {
+            .container {
+                flex-wrap: nowrap;
+            }
+
+            .container img,
+            .text {
+                flex: 1 1 50%;
+            }
+
+            .container img {
+                width: 100%;
+            }
+
+            .text {
+                padding: 0 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -64,6 +98,7 @@
 
     <div class="container">
         <img src="https://afar.brightspotcdn.com/dims4/default/c56d9ff/2147483647/strip/true/crop/2000x1000+0+167/resize/1440x720!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2F60%2F20%2F7e3b7d7ca7556c4f05a94b7e8321%2Foriginal-indian-wedding-ritual-henna.jpg" alt="Marriage">
+        
         <div class="text">
             <p>
                 A wedding holds a unique significance within any family, signifying a momentous occasion.
@@ -74,11 +109,11 @@
 
             <h2>ARRANGEMENTS</h2>
             <ul class="arrangements">
-                <li>✔️ Theme decor & Floral arrangements <span class="important"></span></li>
+                <li>✔️ Theme decor & Floral arrangements</li>
                 <li>✔️ Priest arrangement for all rituals</li>
                 <li>✔️ Audio-visual setup</li>
-                <li>✔️ Photography & Video <span class="important"></span></li>
-                <li>✔️ Catering <span class="important"></span></li>
+                <li>✔️ Photography & Video</li>
+                <li>✔️ Catering</li>
             </ul>
         </div>
     </div>
