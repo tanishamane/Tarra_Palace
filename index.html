@@ -5,63 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarra palace</title>
     <link rel="stylesheet" href="style.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
+   
 </head>
 <body class="bg-pink-200">
-<section>
-    <!-- Top Bar -->
-    <div class="bg-purple-800 text-white py-2 px-6 flex justify-between items-center text-sm">
-        <div class="flex items-center space-x-4">
+    <section>
+        <!-- Top Bar -->
+        <div class="bg-purple-800 text-white py-2 px-6 flex justify-between items-center text-sm">
+          <div class="flex items-center space-x-4">
             <span>📞 8867640864</span>
             <a href="mailto:vmotghare26@gmail.com" class="underline">✉️ tanishamane903@gmail.com</a>
+          </div>
+          <a href="enquiery.html" class="bg-red-700 px-4 py-2 rounded text-white text-xs">✏️ ENQUIRE NOW</a>
         </div>
-        <a href="enquiery.html" class="bg-red-700 px-4 py-2 rounded text-white text-xs">✏️ ENQUIRE NOW</a>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="bg-pink-300 p-4 shadow-md fixed top-0 left-0 w-full z-50">
-        <div class="container mx-auto flex justify-between items-center">
+      
+        <!-- Navbar -->
+        <nav class="bg-pink-300 p-4 shadow-md fixed top-0 left-0 w-full z-50">
+          <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <div class="text-2xl font-bold text-purple-900 flex items-center">
-                <span class="text-maroon-700">✷ Tarra</span> <span class="ml-1">palace</span>
+              <span class="text-maroon-700">✷ Tarra</span> <span class="ml-1">palace</span>
             </div>
-
+      
             <!-- Hamburger Icon -->
             <button id="menu-btn" class="md:hidden text-3xl text-purple-900">
-                ☰
+              ☰
             </button>
-
+      
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-6 text-lg text-black" id="nav-links">
-                <a href="#" class="px-3 py-1 rounded hover:text-purple-800">Home</a>
-                <a href="#about" class="px-3 py-1 rounded hover:text-purple-800">Events</a>
-                <a href="#top" class="px-3 py-1 rounded hover:text-purple-800">About</a>
-                <a href="#Hall Packages" class="bg-orange-500 px-3 py-1 rounded text-white">Hall Packages</a>
-                <a href="#FACILITIES" class="px-3 py-1 rounded hover:text-purple-800">FACILITIES</a>
-                <a href="enquiery.html" class="px-3 py-1 rounded hover:text-purple-800">Contact Us</a>
+              <a href="#" class="px-3 py-1 rounded hover:text-purple-800">Home</a>
+              <a href="#about" class="px-3 py-1 rounded hover:text-purple-800">Events</a>
+              <a href="#top" class="px-3 py-1 rounded hover:text-purple-800">About</a>
+              <a href="#Hall Packages" class="bg-orange-500 px-3 py-1 rounded text-white">Hall Packages</a>
+              <a href="#FACILITIES" class="px-3 py-1 rounded hover:text-purple-800">FACILITIES</a>
+              <a href="enquiery.html" class="px-3 py-1 rounded hover:text-purple-800">Contact Us</a>
             </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden flex-col bg-pink-400 text-center p-4 md:hidden">
+          </div>
+      
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden flex-col bg-pink-400 text-center p-4 md:hidden">
             <a href="#" class="py-2 hover:text-purple-800">Home</a>
             <a href="#about" class="py-2 hover:text-purple-800">Events</a>
             <a href="#top" class="py-2 hover:text-purple-800">About</a>
             <a href="#Hall Packages" class="bg-orange-500 px-3 py-2 rounded text-white">Hall Packages</a>
             <a href="enquiery.html" class="py-2 hover:text-purple-800">Contact Us</a>
-        </div>
-    </nav>
-
-    <!-- Push content below fixed nav -->
-    <div class="mt-32"></div>
-
-    <!-- Content -->
-    <!-- <main class="p-4">
-        <img src="image.png" alt="Stage Image" />
-    </main> -->
-</section>
-</section>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const menuBtn = document.getElementById("menu-btn");
+              const mobileMenu = document.getElementById("mobile-menu");
+          
+              menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+              });
+            });
+          </script>
+        </nav>
+      
+        <!-- Push content below fixed nav -->
+        <div class="mt-32"></div>
+      </section>
 <section>
     <div id="slideshow-container">
         <img id="sliderImage" src="2.jpg" alt="C:\Users\tanis\Desktop\website\website_1\2.jpg"> <!-- First image loads by default -->
@@ -326,15 +330,21 @@
 </section>   
     
 <section>
-    <script>
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-      
-        menuBtn.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      </script>
-      
+    <!-- Push content below fixed nav -->
+
+
+<!-- JavaScript to toggle mobile menu -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+  
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    });
+  </script>
+
     
     <script > 
         // Toggle mobile menu
